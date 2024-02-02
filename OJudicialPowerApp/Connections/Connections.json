@@ -1,0 +1,32 @@
+{
+  "b7d890e5-d442-449a-992f-ba2312b6996c": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://sigilotech.sharepoint.com/sites/BriceProjectSite": {
+        "dataSources": {
+          "OJudicial SDTC Register": {
+            "tableName": "a99e071f-0598-4f1b-b3e8-fdaf0d572d94"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "OJudicial SDTC Register"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b7d890e5-d442-449a-992f-ba2312b6996c"
+  }
+}
