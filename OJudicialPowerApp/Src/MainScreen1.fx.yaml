@@ -60,7 +60,20 @@
             SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Semibold
                 Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =If(And(MainScreen1.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0, 3)
+                FillPortions: |-
+                    =/*If(
+                        And(
+                            MainScreen1.Size = ScreenSize.Small,
+                            Or(
+                                newMode,
+                                editMode,
+                                itemSelected
+                            ),
+                            !_V_HideSidebar
+                        ),
+                        0,
+                        3
+                    )*/
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =10
                 LayoutMinHeight: =100
@@ -74,6 +87,7 @@
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 Visible: =If(And(MainScreen1.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), false, true)
+                Width: =If(!_V_HideSidebar,50,500)
                 ZIndex: =2
 
                 Icon3 As icon.OptionsList:
@@ -99,6 +113,7 @@
                     ZIndex: =1
 
                 Icon3_1 As icon.OptionsList:
+                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DisabledBorderColor: =RGBA(245, 245, 245, 1)
                     DisabledColor: =RGBA(225, 223, 221, 1)
