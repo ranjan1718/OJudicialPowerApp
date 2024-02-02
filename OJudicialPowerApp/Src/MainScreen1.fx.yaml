@@ -1040,8 +1040,8 @@
                             Update: =DataCardValue10.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =3
+                            X: =1
+                            Y: =1
                             ZIndex: =1
 
                             DataCardKey11 As Text:
@@ -1110,8 +1110,8 @@
                             Update: =DataCardValue16.Selected
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =3
+                            X: =0
+                            Y: =2
                             ZIndex: =1
 
                             DataCardKey12 As Text:
@@ -1181,8 +1181,8 @@
                             Update: =DataCardValue17.Value
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =4
+                            X: =1
+                            Y: =2
                             ZIndex: =1
 
                             DataCardKey19 As Text:
@@ -1254,8 +1254,8 @@
                             Update: =DataCardValue18.Selected
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =4
+                            X: =0
+                            Y: =3
                             ZIndex: =1
 
                             DataCardKey20 As Text:
@@ -1325,8 +1325,8 @@
                             Update: =DataCardValue19.Value
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =5
+                            X: =1
+                            Y: =3
                             ZIndex: =1
 
                             DataCardKey21 As Text:
@@ -1392,7 +1392,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =5
+                            Y: =44
                             ZIndex: =1
 
                             DataCardKey22 As Text:
@@ -1432,7 +1432,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =6
+                            Y: =45
                             ZIndex: =1
 
                             DataCardKey23 As Text:
@@ -1472,7 +1472,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =6
+                            Y: =45
                             ZIndex: =1
 
                             DataCardKey24 As Text:
@@ -1518,7 +1518,7 @@
                             Update: =DataCardValue23.SelectedDate
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =7
+                            Y: =31
                             ZIndex: =1
 
                             DataCardKey25 As Text:
@@ -1591,8 +1591,8 @@
                             Update: =DataCardValue24.Value
                             Visible: =!(Var_TabItem="Update Court"|| Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =7
+                            X: =0
+                            Y: =5
                             ZIndex: =1
 
                             DataCardKey26 As Text:
@@ -1658,7 +1658,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =8
+                            Y: =43
                             ZIndex: =1
 
                             DataCardKey27 As Text:
@@ -1705,8 +1705,8 @@
                             Update: =DataCardValue26.Value
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =8
+                            X: =0
+                            Y: =14
                             ZIndex: =1
 
                             DataCardKey28 As Text:
@@ -1778,8 +1778,8 @@
                             Update: =DataCardValue27.SelectedDate
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =9
+                            X: =1
+                            Y: =14
                             ZIndex: =1
 
                             DataCardKey29 As Text:
@@ -1851,8 +1851,8 @@
                             Update: =Value(DataCardValue28.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =9
+                            X: =0
+                            Y: =20
                             ZIndex: =1
 
                             DataCardKey30 As Text:
@@ -1922,8 +1922,8 @@
                             Update: =Value(DataCardValue29.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =10
+                            X: =1
+                            Y: =20
                             ZIndex: =1
 
                             DataCardKey31 As Text:
@@ -1993,8 +1993,8 @@
                             Update: =DataCardValue30.SelectedDate
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =10
+                            X: =0
+                            Y: =21
                             ZIndex: =1
 
                             DataCardKey32 As Text:
@@ -2065,8 +2065,8 @@
                             Required: =false
                             Update: =DataCardValue31.SelectedDate
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =11
+                            X: =1
+                            Y: =31
                             ZIndex: =1
 
                             DataCardKey33 As Text:
@@ -2137,8 +2137,8 @@
                             Required: =false
                             Update: =DataCardValue32.SelectedDate
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =11
+                            X: =0
+                            Y: =32
                             ZIndex: =1
 
                             DataCardKey34 As Text:
@@ -2211,7 +2211,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =12
+                            Y: =15
                             ZIndex: =1
 
                             DataCardKey35 As Text:
@@ -2283,8 +2283,8 @@
                             Update: =DataCardValue34.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =12
+                            X: =0
+                            Y: =6
                             ZIndex: =1
 
                             DataCardKey36 As Text:
@@ -2352,8 +2352,8 @@
                             Required: =false
                             Update: =DataCardValue35.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =13
+                            X: =1
+                            Y: =6
                             ZIndex: =1
 
                             DataCardKey37 As Text:
@@ -2421,8 +2421,8 @@
                             Required: =false
                             Update: =DataCardValue36.SelectedDate
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =13
+                            X: =0
+                            Y: =7
                             ZIndex: =1
 
                             DataCardKey38 As Text:
@@ -2493,8 +2493,8 @@
                             Required: =false
                             Update: =Value(DataCardValue37.Value)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =14
+                            X: =1
+                            Y: =7
                             ZIndex: =1
 
                             DataCardKey39 As Text:
@@ -2557,8 +2557,8 @@
                             Height: =70
                             Required: =false
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =14
+                            X: =0
+                            Y: =46
                             ZIndex: =1
 
                             DataCardKey40 As Text:
@@ -2604,7 +2604,7 @@
                             Update: =DataCardValue39.Value
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =15
+                            Y: =40
                             ZIndex: =1
 
                             DataCardKey41 As Text:
@@ -2670,7 +2670,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =15
+                            Y: =46
                             ZIndex: =1
 
                             DataCardKey42 As Text:
@@ -2710,7 +2710,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =16
+                            Y: =47
                             ZIndex: =1
 
                             DataCardKey43 As Text:
@@ -2756,7 +2756,7 @@
                             Update: =DataCardValue42.Checked
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =16
+                            Y: =32
                             ZIndex: =1
 
                             DataCardKey44 As Text:
@@ -2828,8 +2828,8 @@
                             Update: =Value(DataCardValue43.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =17
+                            X: =1
+                            Y: =15
                             ZIndex: =1
 
                             DataCardKey45 As Text:
@@ -2899,8 +2899,8 @@
                             Update: =Value(DataCardValue44.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =17
+                            X: =0
+                            Y: =16
                             ZIndex: =1
 
                             DataCardKey46 As Text:
@@ -2970,8 +2970,8 @@
                             Update: =Value(DataCardValue45.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =18
+                            X: =1
+                            Y: =16
                             ZIndex: =1
 
                             DataCardKey47 As Text:
@@ -3041,8 +3041,8 @@
                             Update: =Value(DataCardValue46.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =18
+                            X: =0
+                            Y: =17
                             ZIndex: =1
 
                             DataCardKey48 As Text:
@@ -3112,8 +3112,8 @@
                             Update: =Value(DataCardValue47.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =19
+                            X: =1
+                            Y: =17
                             ZIndex: =1
 
                             DataCardKey49 As Text:
@@ -3177,7 +3177,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =19
+                            Y: =47
                             ZIndex: =1
 
                             DataCardKey50 As Text:
@@ -3222,8 +3222,8 @@
                             Required: =false
                             Update: =DataCardValue49.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =20
+                            X: =1
+                            Y: =8
                             ZIndex: =1
 
                             DataCardKey51 As Text:
@@ -3293,7 +3293,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =20
+                            Y: =22
                             ZIndex: =1
 
                             DataCardKey52 As Text:
@@ -3357,7 +3357,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =21
+                            Y: =48
                             ZIndex: =1
 
                             DataCardKey53 As Text:
@@ -3402,8 +3402,8 @@
                             Required: =false
                             Update: =Value(DataCardValue52.Value)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =21
+                            X: =0
+                            Y: =33
                             ZIndex: =1
 
                             DataCardKey54 As Text:
@@ -3474,7 +3474,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =22
+                            Y: =23
                             ZIndex: =1
 
                             DataCardKey55 As Text:
@@ -3544,8 +3544,8 @@
                             Required: =false
                             Update: =DataCardValue54.Value
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =22
+                            X: =0
+                            Y: =10
                             ZIndex: =1
 
                             DataCardKey56 As Text:
@@ -3617,7 +3617,7 @@
                             Update: =Value(DataCardValue55.Value)
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =23
+                            Y: =35
                             ZIndex: =1
 
                             DataCardKey57 As Text:
@@ -3687,7 +3687,7 @@
                             Update: =Value(DataCardValue56.Value)
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =23
+                            Y: =35
                             ZIndex: =1
 
                             DataCardKey58 As Text:
@@ -3757,7 +3757,7 @@
                             Update: =Value(DataCardValue57.Value)
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =24
+                            Y: =36
                             ZIndex: =1
 
                             DataCardKey59 As Text:
@@ -3827,8 +3827,8 @@
                             Required: =false
                             Update: =DataCardValue58.Value
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =24
+                            X: =0
+                            Y: =37
                             ZIndex: =1
 
                             DataCardKey60 As Text:
@@ -3899,8 +3899,8 @@
                             Required: =false
                             Update: =Value(DataCardValue59.Value)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =25
+                            X: =1
+                            Y: =37
                             ZIndex: =1
 
                             DataCardKey61 As Text:
@@ -3969,8 +3969,8 @@
                             Required: =false
                             Update: =DataCardValue60.SelectedDate
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =25
+                            X: =0
+                            Y: =27
                             ZIndex: =1
 
                             DataCardKey62 As Text:
@@ -4043,7 +4043,7 @@
                             Update: =DataCardValue61.Value
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =26
+                            Y: =11
                             ZIndex: =1
 
                             DataCardKey63 As Text:
@@ -4115,7 +4115,7 @@
                             Update: =DataCardValue63.Checked
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =26
+                            Y: =11
                             ZIndex: =1
 
                             DataCardKey65 As Text:
@@ -4187,8 +4187,8 @@
                             Update: =Value(DataCardValue64.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =27
+                            X: =1
+                            Y: =23
                             ZIndex: =1
 
                             DataCardKey66 As Text:
@@ -4252,7 +4252,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =27
+                            Y: =48
                             ZIndex: =1
 
                             DataCardKey67 As Text:
@@ -4292,7 +4292,7 @@
                             Required: =false
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =28
+                            Y: =49
                             ZIndex: =1
 
                             DataCardKey68 As Text:
@@ -4337,8 +4337,8 @@
                             Required: =false
                             Update: =Value(DataCardValue67.Value)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =28
+                            X: =0
+                            Y: =38
                             ZIndex: =1
 
                             DataCardKey69 As Text:
@@ -4408,7 +4408,7 @@
                             Update: =Value(DataCardValue68.Value)
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =29
+                            Y: =24
                             ZIndex: =1
 
                             DataCardKey70 As Text:
@@ -4473,7 +4473,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =29
+                            Y: =49
                             ZIndex: =1
 
                             DataCardKey71 As Text:
@@ -4519,8 +4519,8 @@
                             Update: =DataCardValue70.SelectedDate
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =30
+                            X: =1
+                            Y: =24
                             ZIndex: =1
 
                             DataCardKey72 As Text:
@@ -4592,8 +4592,8 @@
                             Required: =false
                             Update: =DataCardValue71.Value
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =30
+                            X: =0
+                            Y: =42
                             ZIndex: =1
 
                             DataCardKey73 As Text:
@@ -4665,7 +4665,7 @@
                             Update: =DataCardValue72.SelectedDate
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =31
+                            Y: =25
                             ZIndex: =1
 
                             DataCardKey74 As Text:
@@ -4736,8 +4736,8 @@
                             Required: =false
                             Update: =DataCardValue73.Selected
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =31
+                            X: =0
+                            Y: =28
                             ZIndex: =1
 
                             DataCardKey75 As Text:
@@ -4805,8 +4805,8 @@
                             Required: =false
                             Update: =DataCardValue74.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =32
+                            X: =1
+                            Y: =28
                             ZIndex: =1
 
                             DataCardKey76 As Text:
@@ -4874,8 +4874,8 @@
                             Required: =false
                             Update: =DataCardValue75.Selected
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =32
+                            X: =0
+                            Y: =29
                             ZIndex: =1
 
                             DataCardKey77 As Text:
@@ -4943,8 +4943,8 @@
                             Required: =false
                             Update: =DataCardValue76.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =33
+                            X: =1
+                            Y: =29
                             ZIndex: =1
 
                             DataCardKey78 As Text:
@@ -5012,8 +5012,8 @@
                             Required: =false
                             Update: =DataCardValue77.Selected
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =33
+                            X: =0
+                            Y: =30
                             ZIndex: =1
 
                             DataCardKey79 As Text:
@@ -5082,8 +5082,8 @@
                             Update: =DataCardValue78.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =34
+                            X: =1
+                            Y: =18
                             ZIndex: =1
 
                             DataCardKey80 As Text:
@@ -5152,8 +5152,8 @@
                             Update: =DataCardValue79.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =34
+                            X: =0
+                            Y: =4
                             ZIndex: =1
 
                             DataCardKey81 As Text:
@@ -5222,8 +5222,8 @@
                             Update: =DataCardValue80.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =35
+                            X: =1
+                            Y: =12
                             ZIndex: =1
 
                             DataCardKey82 As Text:
@@ -5293,7 +5293,7 @@
                             Visible: =!(Var_TabItem="Resume Item" ||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =35
+                            Y: =4
                             ZIndex: =1
 
                             DataCardKey83 As Text:
@@ -5357,7 +5357,7 @@
                             Update: =DataCardValue82.Selected
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =36
+                            Y: =50
                             ZIndex: =1
 
                             DataCardKey84 As Text:
@@ -5427,7 +5427,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =36
+                            Y: =19
                             ZIndex: =1
 
                             DataCardKey85 As Text:
@@ -5495,8 +5495,8 @@
                             Required: =false
                             Update: =DataCardValue84.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =37
+                            X: =1
+                            Y: =50
                             ZIndex: =1
 
                             DataCardKey86 As Text:
@@ -5566,7 +5566,7 @@
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =37
+                            Y: =5
                             ZIndex: =1
 
                             DataCardKey87 As Text:
@@ -5636,7 +5636,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =38
+                            Y: =13
                             ZIndex: =1
 
                             DataCardKey88 As Text:
@@ -5706,7 +5706,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =38
+                            Y: =13
                             ZIndex: =1
 
                             DataCardKey89 As Text:
@@ -5769,7 +5769,7 @@
                             Required: =false
                             Update: =DataCardValue88.Selected
                             Width: =Parent.Width/2
-                            X: =0
+                            X: =1
                             Y: =39
                             ZIndex: =1
 
@@ -5839,8 +5839,8 @@
                             Update: =DataCardValue89.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =39
+                            X: =0
+                            Y: =22
                             ZIndex: =1
 
                             DataCardKey91 As Text:
@@ -5909,7 +5909,7 @@
                             Update: =DataCardValue90.Selected
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =40
+                            Y: =8
                             ZIndex: =1
 
                             DataCardKey92 As Text:
@@ -5978,8 +5978,8 @@
                             Update: =DataCardValue91.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =40
+                            X: =0
+                            Y: =18
                             ZIndex: =1
 
                             DataCardKey93 As Text:
@@ -6048,7 +6048,7 @@
                             Update: =DataCardValue92.Selected
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =41
+                            Y: =9
                             ZIndex: =1
 
                             DataCardKey94 As Text:
@@ -6117,7 +6117,7 @@
                             Update: =DataCardValue93.Selected
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =41
+                            Y: =9
                             ZIndex: =1
 
                             DataCardKey95 As Text:
@@ -6185,8 +6185,8 @@
                             Required: =false
                             Update: =DataCardValue94.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =42
+                            X: =1
+                            Y: =10
                             ZIndex: =1
 
                             DataCardKey96 As Text:
@@ -6255,7 +6255,7 @@
                             Update: =DataCardValue95.Selected
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =42
+                            Y: =33
                             ZIndex: =1
 
                             DataCardKey97 As Text:
@@ -6323,8 +6323,8 @@
                             Required: =false
                             Update: =DataCardValue96.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =43
+                            X: =1
+                            Y: =26
                             ZIndex: =1
 
                             DataCardKey98 As Text:
@@ -6393,7 +6393,7 @@
                             Update: =DataCardValue97.Selected
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =43
+                            Y: =25
                             ZIndex: =1
 
                             DataCardKey99 As Text:
@@ -6456,8 +6456,8 @@
                             Required: =false
                             Update: =DataCardValue98.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =44
+                            X: =1
+                            Y: =41
                             ZIndex: =1
 
                             DataCardKey100 As Text:
@@ -6525,8 +6525,8 @@
                             Required: =false
                             Update: =DataCardValue99.Selected
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =44
+                            X: =0
+                            Y: =34
                             ZIndex: =1
 
                             DataCardKey101 As Text:
@@ -6594,8 +6594,8 @@
                             Required: =false
                             Update: =DataCardValue100.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =45
+                            X: =1
+                            Y: =34
                             ZIndex: =1
 
                             DataCardKey102 As Text:
@@ -6664,7 +6664,7 @@
                             Update: =DataCardValue101.Selected
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =45
+                            Y: =36
                             ZIndex: =1
 
                             DataCardKey103 As Text:
@@ -6732,8 +6732,8 @@
                             Required: =false
                             Update: =DataCardValue102.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =46
+                            X: =1
+                            Y: =27
                             ZIndex: =1
 
                             DataCardKey104 As Text:
@@ -6801,8 +6801,8 @@
                             Required: =false
                             Update: =DataCardValue103.Selected
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =46
+                            X: =0
+                            Y: =26
                             ZIndex: =1
 
                             DataCardKey105 As Text:
@@ -6872,7 +6872,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
-                            Y: =47
+                            Y: =19
                             ZIndex: =1
 
                             DataCardKey106 As Text:
@@ -6942,7 +6942,7 @@
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =47
+                            Y: =21
                             ZIndex: =1
 
                             DataCardKey107 As Text:
@@ -7010,8 +7010,8 @@
                             Required: =false
                             Update: =DataCardValue106.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =48
+                            X: =1
+                            Y: =30
                             ZIndex: =1
 
                             DataCardKey108 As Text:
@@ -7079,8 +7079,8 @@
                             Required: =false
                             Update: =DataCardValue107.Selected
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =48
+                            X: =0
+                            Y: =12
                             ZIndex: =1
 
                             DataCardKey109 As Text:
@@ -7131,6 +7131,154 @@
                                 Y: =DataCardKey109.Y
                                 ZIndex: =4
 
+                        Created_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Created"
+                            Default: =ThisItem.Created
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Created")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: =false
+                            Width: =458
+                            X: =1
+                            Y: =38
+                            ZIndex: =1
+
+                            DataCardKey7 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "DataCardValue6 As 'Text input'":
+                                DisplayMode: =DisplayMode.View
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey7.Y + DataCardKey7.Height + 4
+                                ZIndex: =2
+
+                        "'Created By_DataCard1' As typedDataCard.fluentV9ComboBoxViewCard":
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Author"
+                            Default: =ThisItem.'Created By'
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Author")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: =false
+                            Width: =458
+                            X: =0
+                            Y: =39
+                            ZIndex: =1
+
+                            DataCardKey13 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue11 As Combobox.pcfdataset:
+                                DefaultSelectedItems: =[Parent.Default]
+                                DisplayMode: =DisplayMode.View
+                                Height: =32
+                                Items: =Choices([@'OJudicial SDTC Register'].Author)
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey13.Y + DataCardKey13.Height + 4
+                                ZIndex: =2
+
+                        Modified_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Modified"
+                            Default: =ThisItem.Modified
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Modified")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: =false
+                            Width: =458
+                            X: =1
+                            Y: =40
+                            ZIndex: =1
+
+                            DataCardKey14 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "DataCardValue12 As 'Text input'":
+                                DisplayMode: =DisplayMode.View
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey14.Y + DataCardKey14.Height + 4
+                                ZIndex: =2
+
+                        "'Modified By_DataCard1' As typedDataCard.fluentV9ComboBoxViewCard":
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Editor"
+                            Default: =ThisItem.'Modified By'
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Editor")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: =false
+                            Width: =458
+                            X: =0
+                            Y: =41
+                            ZIndex: =1
+
+                            DataCardKey64 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue62 As Combobox.pcfdataset:
+                                DefaultSelectedItems: =[Parent.Default]
+                                DisplayMode: =DisplayMode.View
+                                Height: =32
+                                Items: =Choices([@'OJudicial SDTC Register'].Editor)
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey64.Y + DataCardKey64.Height + 4
+                                ZIndex: =2
+
                         Status_DataCard3 As typedDataCard.fluentV9ComboBoxEditCard:
                             BorderColor: =RGBA(245, 245, 245, 1)
                             BorderStyle: =BorderStyle.Solid
@@ -7144,7 +7292,7 @@
                             Update: =DataCardValue14.Selected
                             Width: =Parent.Width/2
                             X: =1
-                            Y: =1
+                            Y: =42
                             ZIndex: =25
 
                             DataCardKey16 As Text:
@@ -7207,8 +7355,8 @@
                             Required: =false
                             Update: =DataCardValue13.Selected
                             Width: =Parent.Width/2
-                            X: =0
-                            Y: =2
+                            X: =1
+                            Y: =43
                             ZIndex: =25
 
                             DataCardKey15 As Text:
@@ -7271,8 +7419,8 @@
                             Required: =false
                             Update: =If(Not IsBlank(DateValue3.SelectedDate), Date(Year(DateValue3.SelectedDate), Month(DateValue3.SelectedDate), Day(DateValue3.SelectedDate)) + Time(Value(HourValue3.Selected.Value), Value(MinuteValue3.Selected.Value), Value(Second(DateValue3.SelectedDate))))
                             Width: =Parent.Width/2
-                            X: =1
-                            Y: =2
+                            X: =0
+                            Y: =44
                             ZIndex: =25
 
                             DataCardKey17 As Text:
@@ -7370,7 +7518,7 @@
                             Visible: =true
                             Width: =Parent.Width
                             X: =0
-                            Y: =49
+                            Y: =51
                             ZIndex: =25
 
                             DataCardKey18 As label:
