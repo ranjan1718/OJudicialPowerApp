@@ -889,13 +889,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Agency")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue7.Selected
                             Width: =Parent.Width/2
                             X: =0
@@ -959,13 +953,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Created")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =458
                             X: =1
@@ -1012,13 +1000,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyConsultation")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue8.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
@@ -1083,13 +1065,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Author")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =458
                             X: =0
@@ -1129,13 +1105,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "Agency_x0020_Reference")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue9.Value
                             Width: =Parent.Width/2
                             X: =0
@@ -1202,13 +1172,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Modified")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =458
                             X: =1
@@ -1249,13 +1213,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Editor")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =458
                             X: =0
@@ -1299,13 +1257,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AllocatedAuthorisedMagistrate")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue10.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
@@ -1375,13 +1327,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AllocatedOSDCMember")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue16.Selected
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
@@ -1452,13 +1398,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ApplicantOfficer")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue17.Value
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
@@ -1531,13 +1471,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ApplicationContainsIssues")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue18.Selected
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
@@ -1608,13 +1542,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ApplicationIssueComments")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue19.Value
                             Visible: =!(Var_TabItem="Update Court"||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
@@ -1807,13 +1735,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ComplianceReportDateReceived")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue23.SelectedDate
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -1887,13 +1809,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ConsultationComments")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue24.Value
                             Visible: =!(Var_TabItem="Update Court"|| Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
@@ -2007,13 +1923,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "CourtOutcomeComment")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue26.Value
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true ||Var_TabItem="Update Compliance",false,true)
                             Width: =Parent.Width/2
@@ -2086,13 +1996,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"CourtWarrant_x002f_OrderIssueDat")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue27.SelectedDate
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -2165,13 +2069,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Data_x0028_Authorised_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue28.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -2242,13 +2140,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Data_x002f_Tracking_x0028_Author")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue29.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -2319,13 +2211,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"DateAuthorisationRevoked")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue30.SelectedDate
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -2398,13 +2284,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"DateFurtherComplianceDetailsRequ")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue31.SelectedDate
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -2477,13 +2357,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Datefurtherinformationreceived")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue32.SelectedDate
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -2556,13 +2430,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"DateofCourtApplication")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue33.SelectedDate
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true ||Var_TabItem="Update Compliance",false,true)
                             Width: =Parent.Width/2
@@ -2635,13 +2503,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"DSPORegion")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue34.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
@@ -2711,13 +2573,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"EmergencyApprovalType")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue35.Selected
                             Width: =Parent.Width/2
                             X: =1
@@ -2786,13 +2642,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"EmergencyAuthorisation_x002d_Dat")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue36.SelectedDate
                             Width: =Parent.Width/2
                             X: =0
@@ -2864,13 +2714,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ExtensionNumber_x0028_IfApplicab")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue37.Value)
                             Width: =Parent.Width/2
                             X: =1
@@ -2980,13 +2824,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Files")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue39.Value
                             Visible: = !newMode
                             Width: =Parent.Width/2
@@ -3139,7 +2977,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"FurtherComplianceRetailsRequired")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: =false
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue42.Checked
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -3212,13 +3050,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWData_x0028_Estimated_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue43.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -3289,13 +3121,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWData_x002f_Tracking_x0028_Est")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue44.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -3366,13 +3192,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWListening_x0028_Estimated_x00")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue45.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -3443,13 +3263,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWOptical_x0028_Estimated_x0029")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue46.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -3520,13 +3334,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWTracking_x0028_Estimated_x002")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue47.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -3637,13 +3445,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"LegalOfficer")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue49.Selected
                             Visible: =If(Var_TabItem="Update Court",false,true )
                             Width: =Parent.Width/2
@@ -3713,13 +3515,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Listening_x0028_Authorised_x0029")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue50.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -3830,13 +3626,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Numberofpersonsadverselyaffected")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue52.Value)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -3907,13 +3697,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Optical_x0028_Authorised_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue53.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -3985,13 +3769,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "OSDCRecommendationComments")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue54.Value
                             Visible: =If(Var_TabItem="Update Court"||Var_TabItem="Update Compliance",false,true )
                             Width: =Parent.Width/2
@@ -4064,13 +3842,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedListening_x0028_Used_x00")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue55.Value)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -4141,13 +3913,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedNumberofSearchesCarriedO")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue56.Value)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -4218,13 +3984,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedOptical_x0028_Used_x0029")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue57.Value)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -4296,13 +4056,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ReportedTracking_x0028_Used_x002")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue58.Value
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -4375,13 +4129,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedTracking_x002f_Data_x002")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue59.Value)
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -4452,13 +4200,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RespondedDate_x002f_Time")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue60.SelectedDate
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =Parent.Width/2
@@ -4532,13 +4274,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ResubmissionInstructionComments")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue61.Value
                             Visible: =If(Var_TabItem="Update Court"|| Var_TabItem="Update Compliance",false,true )
                             Width: =Parent.Width/2
@@ -4611,13 +4347,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ResubmissionRequired")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue63.Checked
                             Visible: =If(Var_TabItem="Update Court"|| Var_TabItem="Update Compliance",false,true )
                             Width: =Parent.Width/2
@@ -4690,13 +4420,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Tracking_x0028_Authorised_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue64.Value)
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -4924,13 +4648,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"VariationNumber")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =Value(DataCardValue68.Value)
                             Width: =Parent.Width/2
                             X: =0
@@ -5041,13 +4759,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Warrant_x002f_OrderExpiry")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue70.SelectedDate
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -5121,13 +4833,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ReferenceNo")
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue71.Value
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -5200,13 +4906,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReceivedDate_x002f_Time")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue72.SelectedDate
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =Parent.Width/2
@@ -5279,7 +4979,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AdditionalConditionsMet")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: =false
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue73.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -5349,13 +5049,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidenceG")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue74.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -5425,13 +5119,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidenceG0")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue75.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -5501,13 +5189,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidencep")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue76.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -5577,13 +5259,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidenceU")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue77.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -5653,13 +5329,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ApplicationforRevocationmadeinLo")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue78.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -5729,13 +5399,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ApplicationIssueType_x0028_s_x00")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue79.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
@@ -5805,13 +5469,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ApplicationMadeRemote")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue80.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true ||Var_TabItem="Update Compliance",false,true)
                             Width: =Parent.Width/2
@@ -5881,13 +5539,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ApplicationReferencesParticipati")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue81.Selected
                             Visible: =!(Var_TabItem="Resume Item" ||Var_TabItem="Update Compliance" )
                             Width: =Parent.Width/2
@@ -6021,13 +5673,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AuthorisedDevices")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue83.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -6097,13 +5743,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ComplianceReviewOutcome")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue84.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -6173,13 +5813,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ConsultationType")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue85.Selected
                             Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
@@ -6249,13 +5883,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"CourtApplicationMade")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue86.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true ||Var_TabItem="Update Compliance",false,true)
                             Width: =Parent.Width/2
@@ -6325,13 +5953,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"CourtApplicationOutcome")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue87.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -6396,13 +6018,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"EnterpriseKeywords")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue88.Selected
                             Width: =Parent.Width/2
                             X: =1
@@ -6471,13 +6087,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Executedinparticipatingjurisdict")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue89.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -6547,13 +6157,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GeneralUseWarrant_x002f_Order")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue90.Selected
                             Width: =Parent.Width/2
                             X: =0
@@ -6622,13 +6226,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"IssuingJudicialMember")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue91.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true ||Var_TabItem="Update Compliance",false,true)
                             Width: =Parent.Width/2
@@ -6698,13 +6296,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"OSDCCourtProcess")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue92.Selected
                             Visible: =If(Var_TabItem="Update Court"||Var_TabItem="Update Compliance",false,true )
                             Width: =Parent.Width/2
@@ -6774,13 +6366,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"OSDCDetermination")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue93.Selected
                             Visible: =If(Var_TabItem="Update Court"||Var_TabItem="Update Compliance",false,true )
                             Width: =Parent.Width/2
@@ -6850,13 +6436,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"OversightBody")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue94.Selected
                             Visible: =If(Var_TabItem="Update Court",false,true )
                             Width: =Parent.Width/2
@@ -6926,13 +6506,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Person_x0028_s_x0029_incidentall")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue95.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -7002,13 +6576,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ProcessStatus")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue96.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =Parent.Width/2
@@ -7078,13 +6646,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReceivedDay")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue97.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =Parent.Width/2
@@ -7149,13 +6711,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReceivedWithinHours")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue98.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =Parent.Width/2
@@ -7225,13 +6781,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Remedialaction")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue99.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -7301,13 +6851,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedDevicesUsed")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue100.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -7377,13 +6921,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedSearchwasExecuted")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue101.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All"||Var_TabItem="Update Compliance",true,false )
                             Width: =Parent.Width/2
@@ -7453,13 +6991,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RespondedWithinHours")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue102.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =Parent.Width/2
@@ -7529,13 +7061,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RespondedDay")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue103.Selected
                             Visible: =If(Var_TabItem="View All"||Var_TabItem="Update All",true,false )
                             Width: =Parent.Width/2
@@ -7605,13 +7131,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ResultsofRevocationApplication")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue104.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -7681,13 +7201,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Retrieved_x0028_RetrievalAuthori")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue105.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -7757,13 +7271,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RevocationApplicant")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue106.Selected
                             Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
@@ -7833,13 +7341,7 @@
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Warrant_x002f_OrderType")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
+                            Required: =If(Self.Visible && Self.DisplayMode=DisplayMode.Edit,true,false)
                             Update: =DataCardValue107.Selected
                             Width: =Parent.Width/2
                             X: =0
