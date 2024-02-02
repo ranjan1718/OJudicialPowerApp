@@ -889,6 +889,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue8.Selected
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
                             Y: =0
@@ -1021,6 +1022,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue10.Selected
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =0
                             Y: =3
@@ -1085,6 +1087,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue16.Selected
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
                             Y: =3
@@ -1150,6 +1153,7 @@
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ApplicantOfficer")
                             Required: =false
                             Update: =DataCardValue17.Value
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =0
                             Y: =4
@@ -1217,6 +1221,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue18.Selected
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
                             Y: =4
@@ -1282,6 +1287,7 @@
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ApplicationIssueComments")
                             Required: =false
                             Update: =DataCardValue19.Value
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =0
                             Y: =5
@@ -1537,6 +1543,7 @@
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "ConsultationComments")
                             Required: =false
                             Update: =DataCardValue24.Value
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
                             Y: =7
@@ -2177,6 +2184,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue34.Selected
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
                             Y: =12
@@ -4854,6 +4862,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue79.Selected
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
                             Y: =34
@@ -5238,6 +5247,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue85.Selected
+                            Visible: =!(Var_TabItem="Update Court")
                             Width: =Parent.Width/2
                             X: =1
                             Y: =37
