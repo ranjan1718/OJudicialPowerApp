@@ -60,7 +60,20 @@
             SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
                 DropShadow: =DropShadow.Semibold
                 Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =If(And(MainScreen1.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0, 3)
+                FillPortions: |-
+                    =/*If(
+                        And(
+                            MainScreen1.Size = ScreenSize.Small,
+                            Or(
+                                newMode,
+                                editMode,
+                                itemSelected
+                            ),
+                            !_V_HideSidebar
+                        ),
+                        0,
+                        3
+                    )*/
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =10
                 LayoutMinHeight: =100
@@ -74,6 +87,7 @@
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
                 Visible: =If(And(MainScreen1.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), false, true)
+                Width: =If(!_V_HideSidebar,50,500)
                 ZIndex: =2
 
                 Icon3 As icon.OptionsList:
@@ -99,6 +113,7 @@
                     ZIndex: =1
 
                 Icon3_1 As icon.OptionsList:
+                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 0, 0, 0)
                     DisabledBorderColor: =RGBA(245, 245, 245, 1)
                     DisabledColor: =RGBA(225, 223, 221, 1)
@@ -935,52 +950,6 @@
                                 Y: =DataCardKey8.Y
                                 ZIndex: =4
 
-                        Created_DataCard1 As typedDataCard.fluentV9TextualViewCard:
-                            BorderColor: =RGBA(245, 245, 245, 1)
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="Created"
-                            Default: =ThisItem.Created
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Created")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
-                            Width: =458
-                            X: =1
-                            Y: =38
-                            ZIndex: =1
-
-                            DataCardKey7 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue6 As 'Text input'":
-                                BasePaletteColor: =
-                                DisplayMode: =DisplayMode.View
-                                FontColor: =
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey7.Y + DataCardKey7.Height + 4
-                                ZIndex: =2
-
                         "'Agency Consultation_DataCard1' As typedDataCard.fluentV9ComboBoxEditCard":
                             BorderColor: =RGBA(245, 245, 245, 1)
                             BorderStyle: =BorderStyle.Solid
@@ -1058,50 +1027,6 @@
                                 Y: =DataCardKey9.Y
                                 ZIndex: =4
 
-                        "'Created By_DataCard1' As typedDataCard.fluentV9ComboBoxViewCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="Author"
-                            Default: =ThisItem.'Created By'
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Author")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
-                            Width: =458
-                            X: =0
-                            Y: =39
-                            ZIndex: =1
-
-                            DataCardKey13 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            DataCardValue11 As Combobox.pcfdataset:
-                                DefaultSelectedItems: =[Parent.Default]
-                                DisplayMode: =DisplayMode.View
-                                Height: =32
-                                Items: =Choices([@'OJudicial SDTC Register'].Author)
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey13.Y + DataCardKey13.Height + 4
-                                ZIndex: =2
-
                         "'Agency Reference_DataCard2' As typedDataCard.fluentV9TextualEditCard":
                             BorderColor: =RGBA(245, 245, 245, 1)
                             BorderStyle: =BorderStyle.Solid
@@ -1175,96 +1100,6 @@
                                 X: =0
                                 Y: =DataCardKey10.Y
                                 ZIndex: =4
-
-                        Modified_DataCard1 As typedDataCard.fluentV9TextualViewCard:
-                            BorderColor: =RGBA(245, 245, 245, 1)
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="Modified"
-                            Default: =ThisItem.Modified
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Modified")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
-                            Width: =458
-                            X: =1
-                            Y: =40
-                            ZIndex: =1
-
-                            DataCardKey14 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            "DataCardValue12 As 'Text input'":
-                                BasePaletteColor: =
-                                DisplayMode: =DisplayMode.View
-                                FontColor: =
-                                Height: =32
-                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Value: =Parent.Default
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey14.Y + DataCardKey14.Height + 4
-                                ZIndex: =2
-
-                        "'Modified By_DataCard1' As typedDataCard.fluentV9ComboBoxViewCard":
-                            BorderColor: =RGBA(245, 245, 245, 1)
-                            BorderStyle: =BorderStyle.Solid
-                            DataField: ="Editor"
-                            Default: =ThisItem.'Modified By'
-                            DisplayMode: =DisplayMode.View
-                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Editor")
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =70
-                            Required: |-
-                                =If(
-                                    Self.Visible,
-                                    Self.DisplayMode = DisplayMode.Edit,
-                                    true,
-                                    false
-                                )
-                            Width: =458
-                            X: =0
-                            Y: =41
-                            ZIndex: =1
-
-                            DataCardKey64 As Text:
-                                DisplayMode: =DisplayMode.Edit
-                                FontColor: =
-                                Height: =22
-                                Text: =Parent.DisplayName
-                                Weight: ='TextCanvas.Weight'.Semibold
-                                Width: =Parent.Width - 48
-                                Wrap: =false
-                                X: =24
-                                Y: =10
-                                ZIndex: =1
-
-                            DataCardValue62 As Combobox.pcfdataset:
-                                DefaultSelectedItems: =[Parent.Default]
-                                DisplayMode: =DisplayMode.View
-                                Height: =32
-                                Items: =Choices([@'OJudicial SDTC Register'].Editor)
-                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                Width: =Parent.Width - 48
-                                X: =24
-                                Y: =DataCardKey64.Y + DataCardKey64.Height + 4
-                                ZIndex: =2
 
                         "'Allocated Authorised Magistrate_DataCard1' As typedDataCard.fluentV9ComboBoxEditCard":
                             BorderColor: =RGBA(245, 245, 245, 1)
@@ -7847,6 +7682,186 @@
                                 X: =0
                                 Y: =DataCardKey109.Y
                                 ZIndex: =4
+
+                        Created_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Created"
+                            Default: =ThisItem.Created
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Created")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: |-
+                                =If(
+                                    Self.Visible,
+                                    Self.DisplayMode = DisplayMode.Edit,
+                                    true,
+                                    false
+                                )
+                            Width: =458
+                            X: =1
+                            Y: =38
+                            ZIndex: =1
+
+                            DataCardKey7 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "DataCardValue6 As 'Text input'":
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.View
+                                FontColor: =
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey7.Y + DataCardKey7.Height + 4
+                                ZIndex: =2
+
+                        "'Created By_DataCard1' As typedDataCard.fluentV9ComboBoxViewCard":
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Author"
+                            Default: =ThisItem.'Created By'
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Author")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: |-
+                                =If(
+                                    Self.Visible,
+                                    Self.DisplayMode = DisplayMode.Edit,
+                                    true,
+                                    false
+                                )
+                            Width: =458
+                            X: =0
+                            Y: =39
+                            ZIndex: =1
+
+                            DataCardKey13 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue11 As Combobox.pcfdataset:
+                                DefaultSelectedItems: =[Parent.Default]
+                                DisplayMode: =DisplayMode.View
+                                Height: =32
+                                Items: =Choices([@'OJudicial SDTC Register'].Author)
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey13.Y + DataCardKey13.Height + 4
+                                ZIndex: =2
+
+                        Modified_DataCard1 As typedDataCard.fluentV9TextualViewCard:
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Modified"
+                            Default: =ThisItem.Modified
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Modified")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: |-
+                                =If(
+                                    Self.Visible,
+                                    Self.DisplayMode = DisplayMode.Edit,
+                                    true,
+                                    false
+                                )
+                            Width: =458
+                            X: =1
+                            Y: =40
+                            ZIndex: =1
+
+                            DataCardKey14 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            "DataCardValue12 As 'Text input'":
+                                BasePaletteColor: =
+                                DisplayMode: =DisplayMode.View
+                                FontColor: =
+                                Height: =32
+                                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Value: =Parent.Default
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey14.Y + DataCardKey14.Height + 4
+                                ZIndex: =2
+
+                        "'Modified By_DataCard1' As typedDataCard.fluentV9ComboBoxViewCard":
+                            BorderColor: =RGBA(245, 245, 245, 1)
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Editor"
+                            Default: =ThisItem.'Modified By'
+                            DisplayMode: =DisplayMode.View
+                            DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Editor")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =70
+                            Required: |-
+                                =If(
+                                    Self.Visible,
+                                    Self.DisplayMode = DisplayMode.Edit,
+                                    true,
+                                    false
+                                )
+                            Width: =458
+                            X: =0
+                            Y: =41
+                            ZIndex: =1
+
+                            DataCardKey64 As Text:
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
+                                Height: =22
+                                Text: =Parent.DisplayName
+                                Weight: ='TextCanvas.Weight'.Semibold
+                                Width: =Parent.Width - 48
+                                Wrap: =false
+                                X: =24
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue62 As Combobox.pcfdataset:
+                                DefaultSelectedItems: =[Parent.Default]
+                                DisplayMode: =DisplayMode.View
+                                Height: =32
+                                Items: =Choices([@'OJudicial SDTC Register'].Editor)
+                                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                                Width: =Parent.Width - 48
+                                X: =24
+                                Y: =DataCardKey64.Y + DataCardKey64.Height + 4
+                                ZIndex: =2
 
                         Status_DataCard3 As typedDataCard.fluentV9ComboBoxEditCard:
                             BorderColor: =RGBA(245, 245, 245, 1)
