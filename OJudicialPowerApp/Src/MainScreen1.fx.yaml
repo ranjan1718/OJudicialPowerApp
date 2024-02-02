@@ -853,7 +853,8 @@
                                             "Resume Item"
                                         )
                                     }
-                                )
+                                );
+                                Form3.Valid
                             PressedBorderColor: =RGBA(0, 0, 0, 0)
                             PressedColor: =RGBA(16, 110, 190, 1)
                             PressedFill: =RGBA(0, 0, 0, 0)
