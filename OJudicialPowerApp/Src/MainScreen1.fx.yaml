@@ -1693,6 +1693,7 @@
                             MaxLength: =DataSourceInfo([@'OJudicial SDTC Register'], DataSourceInfo.MaxLength, "CourtOutcomeComment")
                             Required: =false
                             Update: =DataCardValue26.Value
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =8
@@ -1760,6 +1761,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue27.SelectedDate
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =9
@@ -1827,6 +1829,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue28.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =9
@@ -1892,6 +1895,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue29.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =10
@@ -1957,6 +1961,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue30.SelectedDate
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =10
@@ -2158,6 +2163,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue33.SelectedDate
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =12
@@ -2760,6 +2766,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue43.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =17
@@ -2825,6 +2832,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue44.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =17
@@ -2890,6 +2898,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue45.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =18
@@ -2955,6 +2964,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue46.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =18
@@ -3020,6 +3030,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue47.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =19
@@ -3194,6 +3205,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue50.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =20
@@ -3364,6 +3376,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue53.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =22
@@ -4027,6 +4040,7 @@
                             Height: =70
                             Required: =false
                             Update: =Value(DataCardValue64.Value)
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =27
@@ -4301,6 +4315,7 @@
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
                             Required: =false
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =29
@@ -4342,6 +4357,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue70.SelectedDate
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =30
@@ -4864,6 +4880,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue78.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =34
@@ -4998,6 +5015,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue80.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =35
@@ -5196,6 +5214,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue83.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =36
@@ -5394,6 +5413,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue86.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =38
@@ -5458,6 +5478,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue87.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =38
@@ -5586,6 +5607,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue89.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =39
@@ -5719,6 +5741,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue91.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =40
@@ -6556,6 +6579,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue104.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =0
                             Y: =47
@@ -6620,6 +6644,7 @@
                             Height: =70
                             Required: =false
                             Update: =DataCardValue105.Selected
+                            Visible: =If( Var_TabItem="Resume Item" || newMode=true,false,true)
                             Width: =Parent.Width/2
                             X: =1
                             Y: =47
