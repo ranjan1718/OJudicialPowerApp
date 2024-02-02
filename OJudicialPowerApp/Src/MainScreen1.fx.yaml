@@ -1505,7 +1505,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ComplianceReportDateReceived"
                             Default: =ThisItem.'Compliance Report Date Received'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ComplianceReportDateReceived")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -1686,7 +1691,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="CourtOutcomeComment"
                             Default: =ThisItem.'Court Outcome Comment'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"CourtOutcomeComment")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -1755,7 +1765,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="CourtWarrant_x002f_OrderIssueDat"
                             Default: =ThisItem.'Court Warrant/Order Issue Date'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"CourtWarrant_x002f_OrderIssueDat")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -1823,7 +1838,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Data_x0028_Authorised_x0029_"
                             Default: =ThisItem.'Data (Authorised)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Data_x0028_Authorised_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -1889,7 +1909,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Data_x002f_Tracking_x0028_Author"
                             Default: =ThisItem.'Data/Tracking (Authorised)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Data_x002f_Tracking_x0028_Author")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -1955,7 +1980,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="DateAuthorisationRevoked"
                             Default: =ThisItem.'Date Authorisation Revoked'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"DateAuthorisationRevoked")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2023,7 +2053,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="DateFurtherComplianceDetailsRequ"
                             Default: =ThisItem.'Date Further Compliance Details Required'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All" || Var_TabItem = "Update All" || Var_TabItem = "Update Compliance",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"DateFurtherComplianceDetailsRequ")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2090,7 +2125,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Datefurtherinformationreceived"
                             Default: =ThisItem.'Date further information received'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Datefurtherinformationreceived")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2157,7 +2197,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="DateofCourtApplication"
                             Default: =ThisItem.'Date of Court Application'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"DateofCourtApplication")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2546,7 +2591,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Files"
                             Default: =ThisItem.Files
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All" || Var_TabItem = "Update Compliance",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Files")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2693,7 +2743,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="FurtherComplianceRetailsRequired"
                             Default: =ThisItem.'Further Compliance Retails Required/Requested'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update All" || Var_TabItem = "Update Compliance",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"FurtherComplianceRetailsRequired")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2760,7 +2815,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="GUWData_x0028_Estimated_x0029_"
                             Default: =ThisItem.'GUW Data (Estimated)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWData_x0028_Estimated_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2826,7 +2886,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="GUWData_x002f_Tracking_x0028_Est"
                             Default: =ThisItem.'GUW Data/Tracking (Estimated)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWData_x002f_Tracking_x0028_Est")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2892,7 +2957,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="GUWListening_x0028_Estimated_x00"
                             Default: =ThisItem.'GUW Listening (Estimated)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWListening_x0028_Estimated_x00")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -2958,7 +3028,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="GUWOptical_x0028_Estimated_x0029"
                             Default: =ThisItem.'GUW Optical (Estimated)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWOptical_x0028_Estimated_x0029")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3024,7 +3099,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="GUWTracking_x0028_Estimated_x002"
                             Default: =ThisItem.'GUW Tracking (Estimated)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"GUWTracking_x0028_Estimated_x002")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3199,7 +3279,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Listening_x0028_Authorised_x0029"
                             Default: =ThisItem.'Listening (Authorised)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Listening_x0028_Authorised_x0029")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3305,7 +3390,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Numberofpersonsadverselyaffected"
                             Default: =ThisItem.'Number of persons adversely affected by search (excludes the subject of the Authorisation)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Numberofpersonsadverselyaffected")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3370,7 +3460,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Optical_x0028_Authorised_x0029_"
                             Default: =ThisItem.'Optical (Authorised)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Optical_x0028_Authorised_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3436,7 +3531,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="OSDCRecommendationComments"
                             Default: =ThisItem.'OSDC Recommendation Comments'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"OSDCRecommendationComments")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3504,7 +3604,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReportedListening_x0028_Used_x00"
                             Default: =ThisItem.'Reported Listening (Used)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedListening_x0028_Used_x00")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3569,7 +3674,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReportedNumberofSearchesCarriedO"
                             Default: =ThisItem.'Reported Number of Searches Carried Out'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedNumberofSearchesCarriedO")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3634,7 +3744,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReportedOptical_x0028_Used_x0029"
                             Default: =ThisItem.'Reported Optical (Used)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedOptical_x0028_Used_x0029")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3699,7 +3814,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReportedTracking_x0028_Used_x002"
                             Default: =ThisItem.'Reported Tracking (Used)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedTracking_x0028_Used_x002")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3767,7 +3887,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReportedTracking_x002f_Data_x002"
                             Default: =ThisItem.'Reported Tracking/Data (Used)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedTracking_x002f_Data_x002")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3832,7 +3957,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="RespondedDate_x002f_Time"
                             Default: =ThisItem.'Responded Date/Time'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RespondedDate_x002f_Time")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3899,7 +4029,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ResubmissionInstructionComments"
                             Default: =ThisItem.'Resubmission Instruction Comments'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ResubmissionInstructionComments")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -3967,7 +4102,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ResubmissionRequired"
                             Default: =ThisItem.'Resubmission Required'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ResubmissionRequired")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4034,7 +4174,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Tracking_x0028_Authorised_x0029_"
                             Default: =ThisItem.'Tracking (Authorised)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Tracking_x0028_Authorised_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4180,7 +4325,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="UsedData_x0028_Reported_x0029_"
                             Default: =ThisItem.'Used Data (Reported)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"UsedData_x0028_Reported_x0029_")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4245,7 +4395,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="VariationNumber"
                             Default: =ThisItem.'Variation Number'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"VariationNumber")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4351,7 +4506,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Warrant_x002f_OrderExpiry"
                             Default: =ThisItem.'Warrant/Order Expiry'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Warrant_x002f_OrderExpiry")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4419,7 +4579,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReferenceNo"
                             Default: =ThisItem.'Reference No'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All" || Var_TabItem = "Update Compliance",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReferenceNo")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4487,7 +4652,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReceivedDate_x002f_Time"
                             Default: =ThisItem.'Received Date/Time'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReceivedDate_x002f_Time")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4554,7 +4724,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="AdditionalConditionsMet"
                             Default: =ThisItem.'Additional Conditions Met'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AdditionalConditionsMet")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4618,7 +4793,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="AgencyReportedDetailsofEvidenceG"
                             Default: =ThisItem.'Agency Reported Details of Evidence Gathered Provided'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidenceG")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4682,7 +4862,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="AgencyReportedDetailsofEvidenceG0"
                             Default: =ThisItem.'Agency Reported Details of Evidence Gathered Resulted in Criminal Proceedings'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidenceG0")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4746,7 +4931,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="AgencyReportedDetailsofEvidencep"
                             Default: =ThisItem.'Agency Reported Details of Evidence progressed Investigation'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidencep")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4810,7 +5000,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="AgencyReportedDetailsofEvidenceU"
                             Default: =ThisItem.'Agency Reported Details of Evidence Used Other than in Criminal Proceedings'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AgencyReportedDetailsofEvidenceU")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -4874,7 +5069,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ApplicationforRevocationmadeinLo"
                             Default: =ThisItem.'Application for Revocation made in Local Court'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ApplicationforRevocationmadeinLo")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5009,7 +5209,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ApplicationMadeRemote"
                             Default: =ThisItem.'Application Made Remote'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ApplicationMadeRemote")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5208,7 +5413,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="AuthorisedDevices"
                             Default: =ThisItem.'Authorised Devices'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"AuthorisedDevices")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5273,7 +5483,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ComplianceReviewOutcome"
                             Default: =ThisItem.'Compliance Review Outcome'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ComplianceReviewOutcome")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5407,7 +5622,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="CourtApplicationMade"
                             Default: =ThisItem.'Court Application Made'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"CourtApplicationMade")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5472,7 +5692,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="CourtApplicationOutcome"
                             Default: =ThisItem.'Court Application Outcome'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance"|| Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"CourtApplicationOutcome")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5537,7 +5762,7 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="EnterpriseKeywords"
                             Default: =ThisItem.'Enterprise Keywords'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: =DisplayMode.View
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"EnterpriseKeywords")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5601,7 +5826,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Executedinparticipatingjurisdict"
                             Default: =ThisItem.'Executed in participating jurisdiction'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Executedinparticipatingjurisdict")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5735,7 +5965,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="IssuingJudicialMember"
                             Default: =ThisItem.'Issuing Judicial Member'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"IssuingJudicialMember")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5869,7 +6104,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="OSDCDetermination"
                             Default: =ThisItem.'OSDC Determination'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"OSDCDetermination")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5933,7 +6173,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="OversightBody"
                             Default: =ThisItem.'Oversight Body'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "Resume Item" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"OversightBody")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -5997,7 +6242,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Person_x0028_s_x0029_incidentall"
                             Default: =ThisItem.'Person(s) incidentally monitored'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Person_x0028_s_x0029_incidentall")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6061,7 +6311,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ProcessStatus"
                             Default: =ThisItem.'Process Status'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ProcessStatus")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6125,7 +6380,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReceivedDay"
                             Default: =ThisItem.'Received Day'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReceivedDay")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6189,7 +6449,7 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReceivedWithinHours"
                             Default: =ThisItem.'Received Within Hours'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: =DisplayMode.View
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReceivedWithinHours")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6253,7 +6513,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Remedialaction"
                             Default: =ThisItem.'Remedial action'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Remedialaction")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6317,7 +6582,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReportedDevicesUsed"
                             Default: =ThisItem.'Reported Devices Used'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedDevicesUsed")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6381,7 +6651,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ReportedSearchwasExecuted"
                             Default: =ThisItem.'Reported Search was Executed'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ReportedSearchwasExecuted")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6445,7 +6720,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="RespondedWithinHours"
                             Default: =ThisItem.'Responded  Within Hours'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RespondedWithinHours")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6509,7 +6789,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="RespondedDay"
                             Default: =ThisItem.'Responded Day'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update All" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RespondedDay")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6573,7 +6858,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="ResultsofRevocationApplication"
                             Default: =ThisItem.'Results of Revocation Application'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"ResultsofRevocationApplication")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6638,7 +6928,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Retrieved_x0028_RetrievalAuthori"
                             Default: =ThisItem.'Retrieved (Retrieval Authorisations only)'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Compliance" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Retrieved_x0028_RetrievalAuthori")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6703,7 +6998,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="RevocationApplicant"
                             Default: =ThisItem.'Revocation Applicant'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"RevocationApplicant")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
@@ -6767,7 +7067,12 @@
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="Warrant_x002f_OrderType"
                             Default: =ThisItem.'Warrant/Order Type'
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: |-
+                                =If(
+                                    Var_TabItem = "Update Court" || Var_TabItem = "Resume Item" || Var_TabItem = "View All",
+                                    DisplayMode.View,
+                                    DisplayMode.Edit
+                                )
                             DisplayName: =DataSourceInfo([@'OJudicial SDTC Register'],DataSourceInfo.DisplayName,"Warrant_x002f_OrderType")
                             Fill: =RGBA(0, 0, 0, 0)
                             Height: =70
